@@ -83,7 +83,7 @@ namespace TicTacToeWinFormApp
             // 
             // buttonNewGame
             // 
-            this.buttonNewGame.BackColor = System.Drawing.Color.Lime;
+            this.buttonNewGame.BackColor = System.Drawing.Color.GreenYellow;
             this.buttonNewGame.Location = new System.Drawing.Point(315, 20);
             this.buttonNewGame.Name = "buttonNewGame";
             this.buttonNewGame.Size = new System.Drawing.Size(774, 40);
