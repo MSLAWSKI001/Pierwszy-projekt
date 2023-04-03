@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MSlawski\\klasa-3d-2022-2023-main\\Pierwszy projekt\\TestApp\\TestApp.csproj",
+      "projectUniqueName": "C:\\MSlawski3D\\Pierwszy-projekt\\TestApp\\TestApp.csproj",
       "projectName": "TestApp",
-      "projectPath": "C:\\MSlawski\\klasa-3d-2022-2023-main\\Pierwszy projekt\\TestApp\\TestApp.csproj",
+      "projectPath": "C:\\MSlawski3D\\Pierwszy-projekt\\TestApp\\TestApp.csproj",
       "packagesPath": "C:\\Users\\Uczen\\.nuget\\packages\\",
-      "outputPath": "C:\\MSlawski\\klasa-3d-2022-2023-main\\Pierwszy projekt\\TestApp\\obj\\",
+      "outputPath": "C:\\MSlawski3D\\Pierwszy-projekt\\TestApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
