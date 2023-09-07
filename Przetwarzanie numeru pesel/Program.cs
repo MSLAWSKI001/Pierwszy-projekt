@@ -13,7 +13,7 @@ namespace Przetwarzanie_numeru_pesel
             {
                 Pesel p = new Pesel(numerPesel);
 
-                Console.WriteLine("Plec wlasciciela numeru:" + p.Plec);
+                Console.WriteLine("Plec wlasciciela numeru :" + p.Plec);
                 Console.WriteLine("Plec wlasciciela numeru:" + p.PlecOpisowa);
             }
             catch (Exception ex)
