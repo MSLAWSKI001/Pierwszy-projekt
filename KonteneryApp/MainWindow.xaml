@@ -1,0 +1,23 @@
+﻿<Window x:Class="KonteneryApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonteneryApp"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Canvas>
+        <Button Content="WrapPanel" 
+                Canvas.Left="86" 
+                Canvas.Top="207"
+                Click="ButtonWrapPanel_Click"/>
+        <Button Content="StackPanel"
+                Canvas.Left="197"
+                Canvas.Top="207" 
+                Click="ButtonStackPanel_Click"/>
+        <Button Content="DockPanel" Canvas.Left="308" Canvas.Top="207" Click="DockPanelButton_Click"/>
+
+    </Canvas>
+</Window>
