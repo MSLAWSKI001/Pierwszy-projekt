@@ -46,7 +46,7 @@
         <Button Canvas.Left="58" Canvas.Top="124" Height="93" Width="318" Background="#FF46BB1D">
             <RadioButton Content="RadioButton" BorderBrush="#FFA95151" Foreground="#FFF10303" Height="28" Width="159" FontSize="22" Background="#FFCA1515"/>
         </Button>
-        <TextBox x:Name="valueTextBox" Canvas.Left="496" TextWrapping="Wrap" Text="dfsgsfsssdfsefsdf" Canvas.Top="295" Width="120"/>
+        <TextBox x:Name="valueTextBox" Canvas.Left="496" TextWrapping="Wrap" Text="dfsgsfsssssdfsefsdf" Canvas.Top="295" Width="120"/>
         <Button Content="Button" Canvas.Left="496" Canvas.Top="327" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Width="70" Click="Button_Click_1"/>
     </Canvas>
 </Window>
