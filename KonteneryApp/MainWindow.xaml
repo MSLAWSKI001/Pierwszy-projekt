@@ -18,6 +18,7 @@
                 Canvas.Top="207" 
                 Click="ButtonStackPanel_Click"/>
         <Button Content="DockPanel" Canvas.Left="308" Canvas.Top="207" Click="DockPanelButton_Click"/>
+        <Button Content="Grid" Canvas.Left="421" Canvas.Top="207" RenderTransformOrigin="-2.272,-0.571" Click="GridPanelButton_Click"/>
 
     </Canvas>
 </Window>
