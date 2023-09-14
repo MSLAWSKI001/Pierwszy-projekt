@@ -5,21 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BindowanieWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Name="thisWindow">
-    <StackPanel>
+        Title="MainWindow" Height="500" Width="800" Name="thisWindow">
+    <StackPanel Background="#FF24D800">
         <TextBlock Text="Wartość wprowadzona:" 
                    Name="TextBlockwynik"/>
         <TextBox x:Name="textBoxInfo" Margin="30 5" Text="Info" TextChanged="textBoxInfo_TextChanged" />
         <Button Content="Button" Margin="20" HorizontalAlignment="Center" Click="Button_Click"/>
-        <TextBlock Text="Wersja z bindowaniem" FontSize="25" TextAlignment="Center"/>
-        <TextBlock Text="{Binding ElementName=textBoxSource,Path=Text}" Name="TextBlockwynik2"/>
+        <TextBlock Text="Wersja z bindowaniem" FontSize="25" TextAlignment="Center" Background="#FF020202" Foreground="#FF71FF00" HorizontalAlignment="Center"/>
+        <TextBlock Text="{Binding ElementName=textBoxSource,Path=Text}" Name="TextBlockwynik2" Width="740"/>
         <TextBox x:Name="textBoxSource" Margin="30 5" Text="Info"/>
         <Button Content="Button" Margin="20" HorizontalAlignment="Center"/>
-        <TextBlock FontSize="25" TextAlignment="Center"><Run Text="Odświ"/><Run Language="pl-pl" Text="e"/><Run Text="rzanie ty"/><Run Text="tu"/><Run Text="łu strony"/></TextBlock>
+        <TextBlock FontSize="25" TextAlignment="Center" Background="Black" Foreground="#FF00FF04" HorizontalAlignment="Center"><Run Text="Odświ"/><Run Language="pl-pl" Text="e"/><Run Text="rzanie ty"/><Run Text="tu"/><Run Text="łu strony"/></TextBlock>
         <TextBox Text="{Binding ElementName=thisWindow, Path=Title, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock Text="Komunikat z pola;" FontSize="30" />
+        <TextBlock Text="Komunikat z pola;" FontSize="30" HorizontalAlignment="Center" Background="Black" Foreground="#FF08FF00" />
         <TextBox Text="{Binding ElementName = thisWindow, Path=SourceValue}" />
         <Button Content="Pokaż komunikat" HorizontalAlignment="Center" Click="Button_Click_1"/>
+
+        <TextBlock TextAlignment="Center" FontSize="23" Background="Black" Foreground="#FF5AFF00" HorizontalAlignment="Center"><Run Language="pl-pl" Text="Dzień tygodania"/></TextBlock>
+        <TextBox TextWrapping="Wrap" Width="120" Text="{Binding ElementName= thisWindow, Path=StringNubmerOfWeek}"/>
+        <Button Content="Pokaż dzień tygodnia" Click="DzienButton_Click" HorizontalAlignment="Center"/>
+
+
+
 
     </StackPanel>
 </Window>
