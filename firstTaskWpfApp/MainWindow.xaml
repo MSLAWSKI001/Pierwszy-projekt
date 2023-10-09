@@ -6,20 +6,21 @@
         xmlns:local="clr-namespace:firstTaskWpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="110" Width="200">
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Podaj informacje" VerticalAlignment="Top" FontSize="22" Foreground="#FFD81B1B"/>
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="200">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="81*"/>
-                <ColumnDefinition Width="19*"/>
-            </Grid.ColumnDefinitions>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"><Run Text="Imie"/><Run Text=" i nazwi"/><Run Text="s"/><Run Text="ko"/><Run Language="pl-pl" Text=":"/></TextBlock>
-            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Grid.ColumnSpan="2" Margin="92,2,0,0" Height="15"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Wiek" VerticalAlignment="Bottom" FontSize="20"/>
-            <TextBox HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="108" Grid.ColumnSpan="2" Height="20" FontSize="14"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="200">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="110" Width="200">
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Podaj informacje" VerticalAlignment="Top" FontSize="22" Foreground="#FFD81B1B"/>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="81*"/>
+                    <ColumnDefinition Width="19*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"><Run Text="Imie"/><Run Text=" i nazwi"/><Run Text="s"/><Run Text="ko"/><Run Language="pl-pl" Text=":"/></TextBlock>
+                <TextBox x:Name="Username" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Grid.ColumnSpan="2" Margin="92,2,0,0" Height="15" />
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Wiek" VerticalAlignment="Bottom" FontSize="20"/>
+                <TextBox x:Name="Age" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="108" Grid.ColumnSpan="2" Height="20" FontSize="14"/>
+            </Grid>
+            <Button HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="20" Width="50" Content="Wykonaj" Click="Wykonaj_Click"/>
         </Grid>
-        <Button HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="20" Width="50" Content="Wykonaj"/>
-
+        <TextBlock x:Name="Warning" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom"  Visibility="Hidden"/>
     </Grid>
-
 </Window>

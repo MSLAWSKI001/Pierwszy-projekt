@@ -24,5 +24,33 @@ namespace firstTaskWpfApp
         {
             InitializeComponent();
         }
+       
+        private void Wykonaj_Click(object sender, RoutedEventArgs e)
+        {
+            string username = Username.Text;
+            if (username == null)
+            {
+                Warning.Text = "nie podałeś imienia";
+                Warning.Visibility = Visibility.Visible;
+            }
+            string agestring = Age.Text;
+            if (agestring == null) 
+            {
+                Warning.Text = "nie podałeś wieku";
+                Warning.Visibility = Visibility.Visible;
+            }
+            int age;
+            if (!(int.TryParse(agestring, out age)))
+            {
+                Warning.Text = "wiek nie jest liczbą";
+                Warning.Visibility = Visibility.Visible;
+            }
+            
+            if (age < 18)
+            {
+                Warning.Text = "jesteś niepełnoletni";
+                Warning.Visibility = Visibility.Visible;
+            }
+        }
     }
 }
