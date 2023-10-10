@@ -28,28 +28,48 @@ namespace firstTaskWpfApp
         private void Wykonaj_Click(object sender, RoutedEventArgs e)
         {
             string username = Username.Text;
-            if (username == null)
+            string agestring = Age.Text;
+            int age;
+            if (string.IsNullOrEmpty(username)&&string.IsNullOrEmpty(agestring))
+            {
+                Warning.Text = "nie podałeś imienia i wieku";
+                Warning.Visibility = Visibility.Visible;
+                Warning.FontSize = 15;
+                Warning.Foreground = Brushes.Red;
+            }
+            else if (string.IsNullOrEmpty(username))
             {
                 Warning.Text = "nie podałeś imienia";
                 Warning.Visibility = Visibility.Visible;
+                Warning.FontSize = 15;
+                Warning.Foreground = Brushes.Red;
             }
-            string agestring = Age.Text;
-            if (agestring == null) 
+            else if (string.IsNullOrEmpty(agestring))
             {
                 Warning.Text = "nie podałeś wieku";
                 Warning.Visibility = Visibility.Visible;
+                Warning.FontSize = 15;
+                Warning.Foreground = Brushes.Red;
             }
-            int age;
-            if (!(int.TryParse(agestring, out age)))
+
+            else if (!int.TryParse(agestring, out age))
             {
                 Warning.Text = "wiek nie jest liczbą";
                 Warning.Visibility = Visibility.Visible;
+                Warning.FontSize = 15;
+                Warning.Foreground = Brushes.Red;
             }
-            
-            if (age < 18)
+
+            else if (age < 18)
             {
                 Warning.Text = "jesteś niepełnoletni";
                 Warning.Visibility = Visibility.Visible;
+                Warning.FontSize = 15;
+                Warning.Foreground = Brushes.Red;
+            }
+            else
+            {
+                Warning.Visibility = Visibility.Hidden;
             }
         }
     }
