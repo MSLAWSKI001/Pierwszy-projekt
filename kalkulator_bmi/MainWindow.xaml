@@ -1,0 +1,23 @@
+﻿<Window x:Class="kalkulator_bmi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kalkulator_bmi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Height="250" Width="350">
+            <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="BMI calculator" VerticalAlignment="Top" Foreground="#FFED1515" FontSize="30"/>
+            <Grid Height="80">
+                <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Waga (kg)" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Wysokość (cm)" VerticalAlignment="Bottom" FontSize="20"/>
+                <TextBox x:Name="Waga" HorizontalAlignment="Right"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="27"/>
+                <TextBox x:Name="Wysokość" HorizontalAlignment="Right"  TextWrapping="Wrap"  VerticalAlignment="Bottom" Width="180" Height="27"/>
+            </Grid>
+            <Button Content="Sprawdź bmi" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="45"  Width="154" Click="Sprawdz_Click" Background="#FFFFCDCD" Foreground="#FF2C861A" />
+            <TextBlock x:Name="Warning" HorizontalAlignment="Center" Margin="0,0,0,60" TextWrapping="Wrap" Text="" Visibility="Hidden" VerticalAlignment="Bottom"/>
+
+        </Grid>
+    </Grid>
+</Window>

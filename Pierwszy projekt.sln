@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComboboxWpfApp", "ComboboxW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Zadania", "00Zadania", "{5D53E123-7831-4EFB-A4DD-FC693193A32E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "firstTaskWpfApp", "firstTaskWpfApp\firstTaskWpfApp.csproj", "{743DEA06-01D0-48DD-85EC-A8965C744B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "firstTaskWpfApp", "firstTaskWpfApp\firstTaskWpfApp.csproj", "{743DEA06-01D0-48DD-85EC-A8965C744B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kalkulator_bmi", "kalkulator_bmi\kalkulator_bmi.csproj", "{7554B6D6-4878-4997-8901-9DCDF0D803F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,10 @@ Global
 		{743DEA06-01D0-48DD-85EC-A8965C744B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{743DEA06-01D0-48DD-85EC-A8965C744B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{743DEA06-01D0-48DD-85EC-A8965C744B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7554B6D6-4878-4997-8901-9DCDF0D803F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7554B6D6-4878-4997-8901-9DCDF0D803F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7554B6D6-4878-4997-8901-9DCDF0D803F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7554B6D6-4878-4997-8901-9DCDF0D803F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +157,7 @@ Global
 		{87931C8F-94A8-4DD3-AD9B-4A5348CF038B} = {1B684129-94D8-40A8-B2E4-4E2E5605749F}
 		{5D53E123-7831-4EFB-A4DD-FC693193A32E} = {64971A0E-2BED-4CF8-AFC9-19D9D58DE171}
 		{743DEA06-01D0-48DD-85EC-A8965C744B64} = {5D53E123-7831-4EFB-A4DD-FC693193A32E}
+		{7554B6D6-4878-4997-8901-9DCDF0D803F9} = {5D53E123-7831-4EFB-A4DD-FC693193A32E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84F08BD6-5A7E-457E-BB97-0994CB37C669}
