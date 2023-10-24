@@ -22,7 +22,7 @@ namespace kalkulator_bmi
     public partial class MainWindow : Window
     {
         float wysokosc;
-        float waga;
+        int waga;
         public MainWindow()
         {
             InitializeComponent();
@@ -49,7 +49,7 @@ namespace kalkulator_bmi
                 Warning.Foreground = Brushes.Red;
             }
             
-            else if (!float.TryParse(wagastr, out waga))
+            else if (!int.TryParse(wagastr, out waga))
             {
                 Warning.Text = "waga nie jest liczbą";
                 Warning.Visibility = Visibility.Visible;
@@ -73,58 +73,62 @@ namespace kalkulator_bmi
                 
             else
             {
-                float bmi = (waga) / ((wysokosc / 100) * (wysokosc / 100));
+                double wysokosckw = Math.Round((float)((wysokosc / 100) * (wysokosc / 100)),1);
+                
+                
+                double bmi  = Math.Round((double) (waga / wysokosckw ), 2);
+                
                 if (bmi < 16)
                 {
-                    Warning.Text = "wygłodzenie " + bmi;
+                    Warning.Text = "wygłodzenie bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi <= 16 && bmi < 17)
                 {
-                    Warning.Text = "wychudzenie " + bmi;
+                    Warning.Text = "wychudzenie bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi >= 17 && bmi < 18.5)
                 {
-                    Warning.Text = "niedowaga " + bmi;
+                    Warning.Text = "niedowaga bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi >= 18.5 && bmi < 25)
                 {
-                    Warning.Text = "waga prawidłowa " + bmi;
+                    Warning.Text = "waga prawidłowa bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi >= 25 && bmi < 30)
                 {
-                    Warning.Text = "nadwaga " + bmi;
+                    Warning.Text = "nadwaga bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi >= 30 && bmi < 35)
                 {
-                    Warning.Text = "1 stopień otylości " + bmi;
+                    Warning.Text = "1 stopień otylości bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi >= 35 && bmi < 40)
                 {
-                    Warning.Text = "2 stopień otylości " + bmi;
+                    Warning.Text = "2 stopień otylości bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
                 }
                 else if (bmi>40)
-                { Warning.Text = "otylość skrajna " + bmi;
+                { Warning.Text = "otylość skrajna bmi: " + bmi;
                     Warning.Visibility = Visibility.Visible;
                     Warning.FontSize = 15;
                     Warning.Foreground = Brushes.Green;
