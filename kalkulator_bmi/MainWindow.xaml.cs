@@ -21,7 +21,7 @@ namespace kalkulator_bmi
 
             if (string.IsNullOrEmpty(wagastr) || string.IsNullOrEmpty(wysokoscstr))
             {
-                ShowWarning("Nie podałeś wagi i wysokości", Brushes.Red);
+                ShowWarning("Nie podałeś wagi lub wysokości", Brushes.Red);
             }
             else if (!float.TryParse(wysokoscstr, out wysokosc) || !int.TryParse(wagastr, out waga))
             {
