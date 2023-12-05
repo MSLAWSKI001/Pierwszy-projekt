@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using UtilsWpf;
 
 namespace SimpleCalculatorMVVMWpfApp
@@ -28,15 +29,32 @@ namespace SimpleCalculatorMVVMWpfApp
 				OnPropertyChanged(nameof(SecondNumber));
 			}
 		}
-		private int resoult;
+		private string result;
 
-		public int Resoult
+		public string Result
 		{
-			get { return resoult; }
-			set { resoult = value;
-				OnPropertyChanged(nameof(Resoult));
-			}
+			get { return result; }
+			set { result = value;
+				OnPropertyChanged(nameof(Result));
+            }
+		}
+        public ICommand AddCommand { get; set;}
+        public ICommand SubCommand { get; set;}
+
+        public MainViewModel()
+        {
+			AddCommand = new RelayCommand<object>(Add);
+			SubCommand = new RelayCommand<object>((object o) =>
+			{
+				int sub = FirstNumber - SecondNumber;
+				Result = "Wynik odejmowania" + sub.ToString();
+			});
+        }
+		private void Add(object o)
+		{
+			int sum = FirstNumber + SecondNumber;
+			Result = "Wynik dodawania" + sum.ToString();
 		}
 
-	}
+    } 
 }

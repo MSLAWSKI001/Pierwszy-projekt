@@ -8,9 +8,7 @@
         Title="Prosty klakulator MVVM" Height="450" Width="800"
         Name="thisWindow">
     <Window.DataContext>
-        <local:MainViewModel>
-            
-        </local:MainViewModel>
+        <local:MainViewModel/>
     </Window.DataContext>
     <StackPanel>
         <WrapPanel HorizontalAlignment="Center">
@@ -22,8 +20,8 @@
             <TextBox TextWrapping="Wrap" Text="{Binding SecondNumber}" Width="200" Height="39"/>
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Center">
-            <Button Content="+" Margin="10,0,10,0" Width="80" Height="80" FontSize="48"/>
-            <Button Content="-" Width="80" FontSize="48"/>
+            <Button Content="+" Margin="10,0,10,0" Width="80" Height="80" FontSize="48" Command="{Binding AddCommand}"/>
+            <Button Content="-" Width="80" FontSize="48" Command="{Binding SubCommand}"/>
             <Button Content="*" Margin="10,0,10,0" Width="80" FontSize="48"/>
             <Button Content="/" Width="80" FontSize="48"/>
 
