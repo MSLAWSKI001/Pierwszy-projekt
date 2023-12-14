@@ -22,10 +22,10 @@
         <WrapPanel HorizontalAlignment="Center">
             <Button Content="+" Margin="10,0,10,0" Width="80" Height="80" FontSize="48" Command="{Binding AddCommand}"/>
             <Button Content="-" Width="80" FontSize="48" Command="{Binding SubCommand}"/>
-            <Button Content="*" Margin="10,0,10,0" Width="80" FontSize="48"/>
-            <Button Content="/" Width="80" FontSize="48"/>
+            <Button Content="*" Margin="10,0,10,0" Width="80" FontSize="48" Command="{Binding MulCommand}"/>
+            <Button Content="/" Width="80" FontSize="48" Command="{Binding MultiTaskCommand}" CommandParameter="/"/>
 
         </WrapPanel>
-        <TextBlock  Text="{Binding Resoult}" HorizontalAlignment="Center"/>
+        <TextBlock  Text="{Binding Resoult}" HorizontalAlignment="Center" Height="37" Width="25"/>
     </StackPanel>
 </Window>
