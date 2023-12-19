@@ -57,9 +57,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertersWpfApp", "Convert
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Wzorzec Projektowy MVVM", "05.Wzorzec Projektowy MVVM", "{128FDE1D-0954-4DB9-83C4-B438E04ABE79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculatorMVVMWpfApp", "SimpleCalculatorMVVMWpfApp\SimpleCalculatorMVVMWpfApp.csproj", "{50F1403D-C852-4CFA-AA9F-3E4A391CAE63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculatorMVVMWpfApp", "SimpleCalculatorMVVMWpfApp\SimpleCalculatorMVVMWpfApp.csproj", "{50F1403D-C852-4CFA-AA9F-3E4A391CAE63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsWpf", "UtilsWpf\UtilsWpf.csproj", "{B0E6A07C-083A-4690-B720-D7473B45FAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilsWpf", "UtilsWpf\UtilsWpf.csproj", "{B0E6A07C-083A-4690-B720-D7473B45FAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersionalQuestionnaireWpfApp", "PersionalQuestionnaireWpfApp\PersionalQuestionnaireWpfApp.csproj", "{4B7957AA-8A2F-4F35-AE94-59347A805B3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +153,10 @@ Global
 		{B0E6A07C-083A-4690-B720-D7473B45FAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E6A07C-083A-4690-B720-D7473B45FAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0E6A07C-083A-4690-B720-D7473B45FAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7957AA-8A2F-4F35-AE94-59347A805B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7957AA-8A2F-4F35-AE94-59347A805B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7957AA-8A2F-4F35-AE94-59347A805B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7957AA-8A2F-4F35-AE94-59347A805B3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{128FDE1D-0954-4DB9-83C4-B438E04ABE79} = {64971A0E-2BED-4CF8-AFC9-19D9D58DE171}
 		{50F1403D-C852-4CFA-AA9F-3E4A391CAE63} = {128FDE1D-0954-4DB9-83C4-B438E04ABE79}
 		{B0E6A07C-083A-4690-B720-D7473B45FAA4} = {128FDE1D-0954-4DB9-83C4-B438E04ABE79}
+		{4B7957AA-8A2F-4F35-AE94-59347A805B3A} = {128FDE1D-0954-4DB9-83C4-B438E04ABE79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84F08BD6-5A7E-457E-BB97-0994CB37C669}
