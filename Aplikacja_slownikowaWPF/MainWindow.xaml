@@ -1,0 +1,35 @@
+﻿<Window x:Class="Aplikacja_slownikowaWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplikacja_slownikowaWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid MinHeight="400" MinWidth="250">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="313*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Text="Aplikacja słownikowa"/>
+        <TextBlock Grid.Row="1" Text="Wybierz słowo"  Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Dodaj słowo"  Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
+        <ComboBox Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120"/>
+        <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center"   TextWrapping="Wrap" Text="Definicja" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Dodaj definicję" VerticalAlignment="Top"/>
+        <TextBox  Grid.Row="4" Grid.Column="1" Text="TextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <TextBlock  Grid.Row="4" TextWrapping="Wrap" Text="Definicja" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button  Grid.Row="5" Grid.Column="1" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
