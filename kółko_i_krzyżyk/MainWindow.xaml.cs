@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Aplikacja_slownikowaWPF
+namespace kółko_i_krzyżyk
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,17 +24,7 @@ namespace Aplikacja_slownikowaWPF
         {
             InitializeComponent();
         }
-        string word;
-        string def;
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            add_word.Text = word;
-            add_def.Text = def;
-        }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+       
     }
 }

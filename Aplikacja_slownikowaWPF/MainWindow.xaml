@@ -17,18 +17,18 @@
             <RowDefinition Height="24*"/>
             <RowDefinition Height="24*"/>
             <RowDefinition Height="313*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="24"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Text="Aplikacja słownikowa"/>
-        <TextBlock Grid.Row="1" Text="Wybierz słowo"  Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
-        <TextBlock Grid.Row="1" Text="Dodaj słowo"  Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
-        <ComboBox Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120"/>
-        <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBlock Grid.Row="3" HorizontalAlignment="Center"   TextWrapping="Wrap" Text="Definicja" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="1" Text="Wybierz słowo"  Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Dodaj słowo"  Grid.Column="1"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+        <TextBox x:Name="add_word" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"   TextWrapping="Wrap" Text="Definicja" VerticalAlignment="Top"/>
         <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Dodaj definicję" VerticalAlignment="Top"/>
-        <TextBox  Grid.Row="4" Grid.Column="1" Text="TextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <TextBlock  Grid.Row="4" TextWrapping="Wrap" Text="Definicja" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <Button  Grid.Row="5" Grid.Column="1" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="add_def"  Grid.Row="4" Grid.Column="1" Text="" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <TextBlock  Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" TextWrapping="Wrap" Text="" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button  Grid.Row="5" Grid.Column="1" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Visible" Click="Button_Click"/>
 
 
     </Grid>
