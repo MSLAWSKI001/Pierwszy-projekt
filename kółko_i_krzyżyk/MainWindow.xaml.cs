@@ -65,6 +65,9 @@ namespace kółko_i_krzyżyk
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
+            if (button.Content != null) {
+                return;
+            }
             if (player1Turn)
             {
                 player1Turn = false;
@@ -160,7 +163,7 @@ namespace kółko_i_krzyżyk
         }
         private void ShowWinnerMessage(string winner) 
         {
-            MessageBox.Show($"{winner} wins", "Koniec gry", MessageBoxButton.OK);
+            MessageBox.Show($"{winner} wygrywa!", "Koniec gry", MessageBoxButton.OK);
             NewGame();
         }
     }

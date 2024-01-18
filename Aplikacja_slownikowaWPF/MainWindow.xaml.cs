@@ -15,26 +15,28 @@ using System.Windows.Shapes;
 
 namespace Aplikacja_slownikowaWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+   
     public partial class MainWindow : Window
+        
     {
+        public string word { get; set; }
+        public string definicion { get; set; }
         public MainWindow()
         {
             InitializeComponent();
         }
-        string word;
-        string def;
+
+        
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             add_word.Text = word;
-            add_def.Text = def;
+            add_def.Text = definicion;
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
     }
 }
