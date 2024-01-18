@@ -63,14 +63,7 @@ namespace kółko_i_krzyżyk
        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CheckWin();
             var button = sender as Button;
-            slots++;
-            if (slots > 9)
-            {
-                 
-                NewGame();
-            }
             if (player1Turn)
             {
                 player1Turn = false;
@@ -80,6 +73,13 @@ namespace kółko_i_krzyżyk
             {
                player1Turn = true;
                button.Content = "O";
+            }
+            slots++;
+            CheckWin();
+            if (slots > 9)
+            {
+                 
+                NewGame();
             }
         }
         public void CheckWin() 
@@ -91,6 +91,7 @@ namespace kółko_i_krzyżyk
                 Button_0_0.Background = Brushes.Green;
                 Button_0_1.Background = Brushes.Green;
                 Button_0_2.Background = Brushes.Green;
+                
                 
             }
             if (Button_1_0.Content != null && Button_1_0.Content == Button_1_1.Content && Button_1_1.Content == Button_1_2.Content && Button_1_0.Content == Button_1_2.Content)
