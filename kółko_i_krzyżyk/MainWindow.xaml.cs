@@ -23,8 +23,113 @@ namespace kółko_i_krzyżyk
         public MainWindow()
         {
             InitializeComponent();
+            NewGame();
+            
         }
+        public bool player1Turn { get; set; }
+        
+        public int slots { get; set; }
+        public void NewGame()
+        {
+            slots = 1;
+            player1Turn = true;
+            Button_0_0.Content = "";
+            Button_0_1.Content = "";
+            Button_0_2.Content = "";
 
+            Button_1_0.Content = "";
+            Button_1_1.Content = "";
+            Button_1_2.Content = "";
+
+            Button_2_0.Content = "";
+            Button_2_1.Content = "";
+            Button_2_2.Content = "";
+        }
        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CheckWin();
+            var button = sender as Button;
+            slots++;
+            if (slots > 9)
+            {
+                 
+                NewGame();
+            }
+            if (player1Turn)
+            {
+                player1Turn = false;
+                button.Content = "X";
+            }
+            else
+            {
+               player1Turn = true;
+               button.Content = "O";
+            }
+        }
+        public void CheckWin() 
+        {
+            if (Button_0_0.Content == Button_0_1.Content && Button_0_1 == Button_0_2 && Button_0_0 == Button_0_2)
+            {
+                Button_0_0.Background = Brushes.Green;
+                Button_0_1.Background = Brushes.Green;
+                Button_0_2.Background = Brushes.Green;
+                
+            }
+            if (Button_1_0.Content == Button_1_1.Content && Button_1_1 == Button_1_2 && Button_1_0 == Button_1_2)
+            {
+                Button_1_0.Background = Brushes.Green;
+                Button_1_1.Background = Brushes.Green;
+                Button_1_2.Background = Brushes.Green;
+                
+            }
+            if (Button_2_0.Content == Button_2_1.Content && Button_2_1 == Button_2_2 && Button_2_0 == Button_2_2)
+            {
+                Button_2_0.Background = Brushes.Green;
+                Button_2_1.Background = Brushes.Green;
+                Button_2_2.Background = Brushes.Green;
+                
+            }
+
+            if (Button_0_0.Content == Button_1_0.Content && Button_1_0 == Button_2_0 && Button_0_0 == Button_2_0)
+            {
+                Button_0_0.Background = Brushes.Green;
+                Button_1_0.Background = Brushes.Green;
+                Button_2_0.Background = Brushes.Green;
+                
+            }
+            if (Button_0_1.Content == Button_1_1.Content && Button_1_1 == Button_2_1 && Button_0_1 == Button_2_1)
+            {
+                Button_0_1.Background = Brushes.Green;
+                Button_1_1.Background = Brushes.Green;
+                Button_2_1.Background = Brushes.Green;
+                
+            }
+            if (Button_0_2.Content == Button_1_2.Content && Button_1_2 == Button_2_2 && Button_0_2 == Button_2_2)
+            {
+                Button_0_2.Background = Brushes.Green;
+                Button_1_2.Background = Brushes.Green;
+                Button_2_2.Background = Brushes.Green;
+                
+            }
+
+
+
+            if (Button_0_0.Content == Button_1_1.Content && Button_1_1 == Button_2_2 && Button_0_0 == Button_2_2)
+            {
+                Button_0_0.Background = Brushes.Green;
+                Button_1_1.Background = Brushes.Green;
+                Button_2_2.Background = Brushes.Green;
+                
+            }
+            if (Button_0_2.Content == Button_1_1.Content && Button_1_1 == Button_2_0 && Button_0_2 == Button_2_0)
+            {
+                Button_0_2.Background = Brushes.Green;
+                Button_1_1.Background = Brushes.Green;
+                Button_2_0.Background = Brushes.Green;
+                
+            }
+            
+        }
     }
 }
