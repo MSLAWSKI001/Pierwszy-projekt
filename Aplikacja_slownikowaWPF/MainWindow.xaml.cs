@@ -19,24 +19,26 @@ namespace Aplikacja_slownikowaWPF
     public partial class MainWindow : Window
         
     {
-        public string word { get; set; }
-        public string definicion { get; set; }
+       private List<string> word_list = new List<string>();
+       public List<string> def_list = new List<string>();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            add_word.Text = word;
-            add_def.Text = definicion;
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+            word_list.Add(add_word.Text);
+            def_list.Add(add_def.Text);
             
         }
+        private void Refresh_word_list() 
+        {
+            word_list.DataSource = word_list;
+        }
+        
+
+       
     }
 }

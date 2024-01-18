@@ -22,7 +22,7 @@
         <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Text="Aplikacja słownikowa"/>
         <TextBlock Grid.Row="1" Text="Wybierz słowo"  Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
         <TextBlock Grid.Row="1" Text="Dodaj słowo"  Grid.Column="1"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"></TextBlock>
-        <ComboBox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+        <ComboBox x:Name="combobox" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
         <TextBox x:Name="add_word" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="add_word_TextChanged"/>
         <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"   TextWrapping="Wrap" Text="Definicja" VerticalAlignment="Top"/>
         <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Dodaj definicję" VerticalAlignment="Top"/>
