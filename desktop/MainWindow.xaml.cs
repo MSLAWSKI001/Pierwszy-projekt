@@ -13,32 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Aplikacja_slownikowaWPF
+namespace desktop
 {
-   
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
-        
     {
-       private List<string> word_list = new List<string>();
-       public List<string> def_list = new List<string>();
         public MainWindow()
         {
-            
+            InitializeComponent();
         }
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            word_list.Add(add_word.Text);
-            def_list.Add(add_def.Text);
-            
-        }
-        private void Refresh_word_list() 
-        {
-            
-        }
-        
-
-       
     }
 }

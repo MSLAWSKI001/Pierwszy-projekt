@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace kółko_i_krzyżyk
+namespace kółko_i_krzyżyk1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -80,6 +80,10 @@ namespace kółko_i_krzyżyk
             }
             slots++;
             CheckWin();
+            if (true)
+            {
+                
+            }
             if (slots > 9)
             {
                 MessageBox.Show($"Remis", "Koniec gry", MessageBoxButton.OK);

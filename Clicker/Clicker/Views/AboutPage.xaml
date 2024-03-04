@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clicker.Views.AboutPage"
+             xmlns:vm="clr-namespace:Clicker.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+
+        <StackLayout>
+            <Label x:Name="gold_label" Text="Score" FontSize="40" TextColor="Chocolate" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label x:Name="score_label" Text="Score" FontSize="40" TextColor="Chocolate" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Button HorizontalOptions="Fill" VerticalOptions="FillAndExpand" Clicked="Button_Clicked" BackgroundColor="Gray" ></Button>
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>

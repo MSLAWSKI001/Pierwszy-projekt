@@ -1,0 +1,34 @@
+﻿<Window x:Class="desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:desktop"
+        mc:Ignorable="d"
+            Title="Nadaj przesylke do 7436739" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="26,50,491,198" ShowGridLines="True">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top"><Run Language="pl-pl" Text="Rodzaj przesyłki"/></TextBlock>
+            <RadioButton x:Name="pocztówka"  Content="pocztówka" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,21,0,0"/>
+            <RadioButton x:Name="list" Content="list" HorizontalAlignment="Left" Margin="0,41,0,0" VerticalAlignment="Top" IsChecked="True" />
+            <RadioButton x:Name="paczka" Content="paczka" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Grid Margin="499,50,10,66" ShowGridLines="True">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Dane adresowe"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pl-pl" Text="Ulica z numerem"/></TextBlock>
+            <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pl-pl" Text="Kod pocztowy"/></TextBlock>
+            <TextBox x:Name="Kod" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pl-pl" Text="Miasto"/></TextBlock>
+            <TextBox HorizontalAlignment="Center" Margin="0,236,0,64" TextWrapping="Wrap" Text="TextBox" Width="271"/>
+
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,396,0,0" VerticalAlignment="Top" Width="780" Height="33" Click="Button_Click_1"/>
+        <Button x:Name="cena1" Content="Sprawdź cene" HorizontalAlignment="Left" Margin="26,241,0,0" VerticalAlignment="Top" Width="283" Height="27" Click="Button_Click"/>
+
+
+        <TextBlock x:Name="cena" HorizontalAlignment="Left" Margin="223,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="110" FontWeight="Bold"><Run Language="pl-pl" Text="Cena: 1,5 zł"/></TextBlock>
+        <Image Margin="26,290,670,81" Source="/list.png" Stretch="Fill"/>
+    </Grid>
+</Window>
