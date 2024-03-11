@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaApp.RejestracjaPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="REJESTRACJA" FontSize="40" HorizontalOptions="Center"/>
+                <Label Text="LOGIN"/>
+                <Entry x:Name="login"/>
+                <Label Text="HASŁO"/>
+                <Entry x:Name="password1" />
+                <Label Text="POWTÓRZ HASŁO"/>
+                <Entry x:Name="re_password"/>
+            <Button Text="REJESTRUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
+
+
+
+            </StackLayout>
+            <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Clicked_1"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
