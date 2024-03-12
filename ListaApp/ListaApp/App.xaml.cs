@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.XPath;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,7 @@ namespace ListaApp
 
         protected override void OnStart()
         {
+           MainPage = new NavigationPage(new RejestracjaPage()); 
         }
 
         protected override void OnSleep()

@@ -2,19 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ListaApp.MainPage">
-    <Grid>
+    
         <StackLayout>
-            <Label Text="LOGOWANIE" FontSize="40" HorizontalOptions="Center"/>
-            <Label Text="LOGIN"/>
-        <Entry />
-        <Label Text="HASŁO"/>
-        <Entry />
-        <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Clicked_1"/>
+        <Button Text="LISTA" Clicked="Button_Clicked"></Button>
+        <Button Text="INFO" Clicked="Button_Clicked_1"></Button>
         
 
 
-    </StackLayout>
-        <Button Text="REJESTRACJA" VerticalOptions="End" Clicked="Button_Clicked"/>
+        </StackLayout>
         
-    </Grid>
+    
 </ContentPage>

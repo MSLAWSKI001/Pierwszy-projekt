@@ -16,14 +16,18 @@ namespace ListaApp
         {
             InitializeComponent();
         }
-
+        public string login_str { get; set; }
+        
         private void Button_Clicked(object sender, EventArgs e)
         {
             string password = password1.Text;
             string password2 = re_password.Text;
             if (password == password2)
             {
-
+                login.Text = login_str;
+                
+               
+                Navigation.PushAsync(new MainPage());
             }
             
             
@@ -33,7 +37,7 @@ namespace ListaApp
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new LoginPage());
         }
     }
 }

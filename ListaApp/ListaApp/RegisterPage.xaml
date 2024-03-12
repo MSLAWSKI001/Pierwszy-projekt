@@ -13,7 +13,7 @@
                 <Label Text="POWTÓRZ HASŁO"/>
                 <Entry x:Name="re_password"/>
             <Button Text="REJESTRUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
-
+                
 
 
             </StackLayout>
