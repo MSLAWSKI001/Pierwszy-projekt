@@ -8,8 +8,6 @@ namespace ListaApp
     {
         public string Login { get; set; }
         public string Password { get; set; }
-
-        public static List<User> UsersList { get; set; }
     }
     
 }

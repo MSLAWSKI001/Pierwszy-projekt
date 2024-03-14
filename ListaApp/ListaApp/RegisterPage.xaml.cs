@@ -16,16 +16,18 @@ namespace ListaApp
         {
             InitializeComponent();
         }
-        public string login_str { get; set; }
+        public string Login_str { get; set; }
+        public string Password_str { get; set; }    
         
         private void Button_Clicked(object sender, EventArgs e)
         {
-            string password = password1.Text;
+            Password_str = password1.Text;
             string password2 = re_password.Text;
-            if (password == password2)
+            if (Password_str   == password2)
             {
-                login.Text = login_str;
-                
+                List<User> users = new List<User>();
+                login.Text = Login_str;
+                users.Add(new User {Password = Password_str , Login = Login_str});
                
                 Navigation.PushAsync(new MainPage());
             }
