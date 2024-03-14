@@ -29,7 +29,7 @@ namespace ListaApp
                 login.Text = Login_str;
                 users.Add(new User {Password = Password_str , Login = Login_str});
                
-                Navigation.PushAsync(new MainPage());
+                Navigation.PushAsync(new MainPage(Login ,Password));
             }
             
             
