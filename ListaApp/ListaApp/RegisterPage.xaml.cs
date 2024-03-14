@@ -24,7 +24,9 @@ namespace ListaApp
             string confirm_password = confirmpassword_entry.Text;
             if (password == confirm_password)
             {
-                var newUser = new User { Login = login, Password = password };
+                User newUser = new User { Login = login, Password = password };
+                User.UsersList = new List<User>();
+                User.UsersList.Add(newUser);
                 Navigation.PushAsync(new MainPage());
             }
             else

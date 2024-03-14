@@ -19,7 +19,17 @@ namespace ListaApp
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            string login = login_entry.Text;
+            string password = password_entry.Text;
+            User user = User.UsersList.FirstOrDefault(u => u.Login == login && u.Password == password);
+            if (user != null)
+            {
             Navigation.PushAsync (new  MainPage());
+            }
+            else
+            {
+                DisplayAlert("Niepowodzenie","Błąd logowania","ok");
+            }
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

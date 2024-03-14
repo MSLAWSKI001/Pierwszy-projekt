@@ -7,9 +7,9 @@
             <StackLayout>
                 <Label Text="LOGOWANIE" FontSize="40" HorizontalOptions="Center"/>
                 <Label Text="LOGIN"/>
-                <Entry />
+                <Entry x:Name="login_entry"/>
                 <Label Text="HASŁO"/>
-                <Entry />
+                <Entry x:Name="password_entry"/>
                 <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
 
 
