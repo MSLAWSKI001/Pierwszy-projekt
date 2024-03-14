@@ -7,11 +7,11 @@
             <StackLayout>
                 <Label Text="REJESTRACJA" FontSize="40" HorizontalOptions="Center"/>
                 <Label Text="LOGIN"/>
-                <Entry x:Name="login"/>
+                <Entry x:Name="login_entry"/>
                 <Label Text="HASŁO"/>
-                <Entry x:Name="password1" />
+                <Entry x:Name="password_entry" />
                 <Label Text="POWTÓRZ HASŁO"/>
-                <Entry x:Name="re_password"/>
+                <Entry x:Name="confirmpassword_entry"/>
             <Button Text="REJESTRUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
                 
 

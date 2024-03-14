@@ -16,20 +16,20 @@ namespace ListaApp
         {
             InitializeComponent();
         }
-        public string Login_str { get; set; }
-        public string Password_str { get; set; }    
-        
+      
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Password_str = password1.Text;
-            string password2 = re_password.Text;
-            if (Password_str   == password2)
+            string login = login_entry.Text;
+            string password = password_entry.Text;
+            string confirm_password = confirmpassword_entry.Text;
+            if (password == confirm_password)
             {
-                List<User> users = new List<User>();
-                login.Text = Login_str;
-                users.Add(new User {Password = Password_str , Login = Login_str});
-               
-                Navigation.PushAsync(new MainPage(Login ,Password));
+                var newUser = new User { Login = login, Password = password };
+                Navigation.PushAsync(new MainPage());
+            }
+            else
+            {
+                DisplayAlert("Błąd","Hasła nei pasują do siebie","ok");
             }
             
             
