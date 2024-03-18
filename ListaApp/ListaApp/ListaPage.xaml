@@ -3,21 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ListaApp.ListaPage">
     <ContentPage.Content>
-        <Grid>
+        <StackLayout>
             <StackLayout>
-                <Label Text="LISTA"/>
-                
-                
-                
-                
-                
-                
-                
-                
-                <Button Text="DODAJ" Clicked="Button_Clicked_1"></Button>
-                <Button Text="USUŃ"></Button>
+                <Grid>
+                    <ListView x:Name="listView">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+                <Grid>
+                    <Button Text="DODAJ" Clicked="Add_Clicked" HorizontalOptions="Center" VerticalOptions="StartAndExpand"></Button>
+                </Grid>
+                <Grid>
+                    <Button Text="USUŃ" Clicked="Remove_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="Center"></Button>
+                </Grid>
             </StackLayout>
-            <Button Text="POWRÓT" Clicked="Button_Clicked" VerticalOptions="End"></Button>
-        </Grid>
+            <Button Text="POWRÓT" Clicked="Back_Clicked" VerticalOptions="End"></Button>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

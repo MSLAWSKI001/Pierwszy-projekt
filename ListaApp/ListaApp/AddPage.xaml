@@ -6,8 +6,8 @@
         <Grid>
             <StackLayout>
             <Label Text="Dodaj nowa wartość"/>
-            <Entry></Entry>
-            <Button Text="DODAJ"></Button>
+            <Entry x:Name="text_entry"></Entry>
+            <Button Text="DODAJ" Clicked="Add_Clicked"></Button>
         </StackLayout>
             <Button Text="POWRÓT" Clicked="Button_Clicked" VerticalOptions="End"></Button>    
         </Grid>

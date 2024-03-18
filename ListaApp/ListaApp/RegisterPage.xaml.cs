@@ -15,6 +15,7 @@ namespace ListaApp
         public RejestracjaPage()
         {
             InitializeComponent();
+            User.UsersList = new List<User>();
         }
       
         private void Button_Clicked(object sender, EventArgs e)
@@ -25,7 +26,6 @@ namespace ListaApp
             if (password == confirm_password)
             {
                 User newUser = new User { Login = login, Password = password };
-                User.UsersList = new List<User>();
                 User.UsersList.Add(newUser);
                 Navigation.PushAsync(new MainPage());
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,19 +13,30 @@ namespace ListaApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListaPage : ContentPage
 	{
-		public ListaPage ()
+        ObservableCollection<string> items = new ObservableCollection<string>();
+        
+
+        public ListaPage ()
 		{
 			InitializeComponent ();
+            listView.ItemsSource = items;
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Back_Clicked(object sender, EventArgs e)
         {
 			Navigation.PushAsync(new MainPage());
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void Add_Clicked(object sender, EventArgs e)
         {
-			Navigation.PushAsync(new AddPage());
+			Navigation.PushAsync(new AddPage(items));
         }
+
+        private void Remove_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }
