@@ -12,12 +12,12 @@
                 <Entry x:Name="password_entry" />
                 <Label Text="POWTÓRZ HASŁO"/>
                 <Entry x:Name="confirmpassword_entry"/>
-            <Button Text="REJESTRUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
+            <Button Text="REJESTRUJ" VerticalOptions="End" Clicked="Button_Rejestruj"/>
                 
 
 
             </StackLayout>
-            <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Clicked_1"/>
+            <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Zaloguj"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

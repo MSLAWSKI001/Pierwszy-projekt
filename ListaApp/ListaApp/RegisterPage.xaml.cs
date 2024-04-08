@@ -18,11 +18,17 @@ namespace ListaApp
             User.UsersList = new List<User>();
         }
       
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Button_Rejestruj(object sender, EventArgs e)
         {
             string login = login_entry.Text;
             string password = password_entry.Text;
             string confirm_password = confirmpassword_entry.Text;
+            if (login == null && password == null)
+            {
+                DisplayAlert("Błąd", "Niepodałeś loginu lub hasła", "ok");
+                return;
+            }
+            {
             if (password == confirm_password)
             {
                 User newUser = new User { Login = login, Password = password };
@@ -32,6 +38,7 @@ namespace ListaApp
             else
             {
                 DisplayAlert("Błąd","Hasła nei pasują do siebie","ok");
+            }  
             }
             
             
@@ -39,7 +46,7 @@ namespace ListaApp
         
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void Button_Zaloguj(object sender, EventArgs e)
         {
             Navigation.PushAsync(new LoginPage());
         }

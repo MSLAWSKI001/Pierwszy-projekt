@@ -10,12 +10,12 @@
                 <Entry x:Name="login_entry"/>
                 <Label Text="HASŁO"/>
                 <Entry x:Name="password_entry"/>
-                <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Button_Clicked"/>
+                <Button Text="ZALOGUJ" VerticalOptions="End" Clicked="Zaloguj_Clicked"/>
 
 
 
             </StackLayout>
-            <Button Text="REJESTRACJA" VerticalOptions="End" Clicked="Button_Clicked_1"/>
+            <Button Text="REJESTRACJA" VerticalOptions="End" Clicked="Rejestruj_Clicked"/>
 
         </Grid>
     </ContentPage.Content>

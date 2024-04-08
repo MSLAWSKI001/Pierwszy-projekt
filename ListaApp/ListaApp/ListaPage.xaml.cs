@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,15 @@ namespace ListaApp
 
         private void Remove_Clicked(object sender, EventArgs e)
         {
-
+            if (listView.SelectedItem != null)
+            {
+                string selectedItem = listView.SelectedItem as string;
+                items.Remove(selectedItem);
+            }
+            else
+            {
+                DisplayAlert("nie wybrano","nie wybrano pozycji","ok");
+            }
         }
 
       

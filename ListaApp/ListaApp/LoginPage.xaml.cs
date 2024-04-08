@@ -17,12 +17,12 @@ namespace ListaApp
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Zaloguj_Clicked(object sender, EventArgs e)
         {
             string login = login_entry.Text;
             string password = password_entry.Text;
             User user = User.UsersList.FirstOrDefault(u => u.Login == login && u.Password == password);
-            if (user != null)
+            if (login != null && password != null)
             {
             Navigation.PushAsync (new  MainPage());
             }
@@ -32,7 +32,7 @@ namespace ListaApp
             }
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void Rejestruj_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new RejestracjaPage());
         }
