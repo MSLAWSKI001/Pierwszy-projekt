@@ -19,5 +19,15 @@ namespace EssentialsApp
         {
             Navigation.PushAsync(new FlashLightPage());
         }
+
+        private void GPS_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GPSPage());
+        }
+
+        private void Compass_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CompassPage());
+        }
     }
 }

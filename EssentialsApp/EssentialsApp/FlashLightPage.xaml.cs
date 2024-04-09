@@ -21,21 +21,26 @@ namespace EssentialsApp
         {
             try
             {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location != null)
-                {
-                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                }
+                Flashlight.TurnOnAsync();
             }
             catch (Exception)
             {
 
-                //throw;
+                throw;
             }
         }
 
-       
-        
+        private void TurnOFF_Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Flashlight.TurnOffAsync();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
