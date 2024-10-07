@@ -4,6 +4,7 @@ f= open("przyklad.txt","r")
 number = f.read()
 numbers = list(number.split())
 print(numbers)
+print(set(numbers))
 print(len(set(numbers)))
 for x in range(len(numbers)):
     if numbers.count(numbers[x]) == 2:
