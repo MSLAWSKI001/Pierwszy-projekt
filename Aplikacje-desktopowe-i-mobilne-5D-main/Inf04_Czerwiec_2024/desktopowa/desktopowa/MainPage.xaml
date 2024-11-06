@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="desktopowa.MainPage"
+             BackgroundColor="#2E8B57"
+             >
+
+    <Grid>
+        <ImageButton x:Name="leftButton"
+               Source="obraz3.png"
+               HorizontalOptions="Start"
+               VerticalOptions= "Center"
+               Clicked="rightButton_Clicked"
+               />
+        
+        <Image Source="obraz.png"
+               HorizontalOptions="Center"
+               WidthRequest="200"
+               HeightRequest="200"
+               Margin="-700, 10, 200, 0"
+               />
+        
+        <Label x:Name="artistLabel"
+               Text=" "
+               TextColor="White"
+               FontSize="50"
+               Margin=" 0, 0, 0, 100"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+        
+        <Label x:Name="titleLabel"
+               Text='""'
+               FontSize="30"
+               TextColor="White"
+               FontAttributes="Italic"
+               Margin="-200, 30, 0, 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               
+               />
+
+        <Label x:Name="musicNumberLabel"
+               Text=" "
+               FontSize="20"
+               TextColor="#61D918"
+               Margin="-300, 120, 0, 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+
+
+        <Label x:Name="publicYearLabel"
+               Text=""
+               FontSize="20"
+               TextColor="#61D918"
+               Margin=" 0, 320, 0, 200"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+
+        <Label x:Name="downloadNumberLabel"
+               Text=""
+               FontSize="20"
+               TextColor="#61D918"
+               Margin="-300, 300, 280, 0"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               />
+
+        <ImageButton
+            Source="obraz2.png"
+            HorizontalOptions="End"
+            VerticalOptions= "Center"
+            Clicked="leftButton_Clicked"
+            />
+        
+        <Button Text="Pobierz"
+            x:Name="downloadButton"
+            FontSize="20"
+            BackgroundColor="#61D918"
+            Margin="-200, 300, 0, 0"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            FontAttributes="Bold"
+            TextColor="Black"
+            Clicked="downloadButton_Clicked"
+            />
+    </Grid>
+
+</ContentPage>

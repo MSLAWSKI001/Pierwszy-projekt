@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Inf04MauiApp.MainPage">
+
+    <StackLayout>
+        <Label Text="Rejestruj konto"
+               FontSize="50"
+               BackgroundColor="Teal"/>
+        
+        <Label Text="Podaj e-mail:"/>
+        <Entry x:Name="entryMail"
+               />
+
+        <Label Text="Podaj hasło:"/>
+        <Entry x:Name="entryPassword"
+               IsPassword="True"/>
+
+        <Label Text="Powtórz hasło:"/>
+        <Entry x:Name="entryRepeatPassword"
+                 IsPassword="True"/>
+
+        <Button Text="Zatwierdź"
+                x:Name="buttonConfirm"
+                HorizontalOptions="Center"
+                Clicked="buttonConfirm_Clicked"
+                />
+
+        <Label x:Name="labelMessage"
+               HorizontalOptions="Center"
+               Text="Autor: Krzysztof Pająk"/>
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
