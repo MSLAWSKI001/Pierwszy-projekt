@@ -1,0 +1,8 @@
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\bin\Debug\Data.txt
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\bin\Debug\konsolowa.exe.config
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\bin\Debug\konsolowa.exe
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\bin\Debug\konsolowa.pdb
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\obj\Debug\konsolowa.csproj.AssemblyReference.cache
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\obj\Debug\konsolowa.csproj.CoreCompileInputs.cache
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\obj\Debug\konsolowa.exe
+C:\Users\Sala213\Desktop\Aplikacje-desktopowe-i-mobilne-5D-main\Inf04_Czerwiec_2024\konsolowa\konsolowa\obj\Debug\konsolowa.pdb
